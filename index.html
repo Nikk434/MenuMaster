@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuMaster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(15 35 0 / 73%)
+        }
+
+        .rubik-mono one-regular {
+            font-family: "Rubik Mono One", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #home {
+            font-size: 60px;
+        }
+
+        #home::before {
+            background: url("https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: .20;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* divide the container into two equal parts */
+            grid-gap: 10px;
+            /* add some gap between the columns */
+        }
+
+        .left {
+            background-color: #f0f0f0;
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            width: max-content;
+        }
+
+        .right {
+            background-color: #e0e0e0;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            width: max-content;
+            margin: 20px;
+
+        }
+
+        img {
+            height: 200px;
+            width: 220px;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 id="home" class="rubik-mono">MenuMaster</h1>
+        <h1>READY TO SERVE YOUR CRAVINGS! </h1>
+    </center>
+    <div class="container">
+        <center>
+            <div class="left">
+                <img src="https://img.freepik.com/free-vector/delivery-service-illustrated_23-2148505081.jpg?t=st=1709572172~exp=1709575772~hmac=1132a860664b6eb16682448c7c3435f45a1f50d6cf7cedcdbd8eef8edfbdece3&w=740"
+                    alt="" srcset="">
+                <br>
+                <a href="OrderNow.html">
+                    <button>
+                        Order now
+                    </button>
+                </a>
+            </div>
+        </center>
+        <center>
+            <div class="right">
+                <img src="https://img.freepik.com/free-vector/dinner-party-concept-illustration_114360-21154.jpg?w=996&t=st=1709572590~exp=1709573190~hmac=3570e4b7ffb205c377677d3e0226f72d528cd056f8588ec8ef7464813719ba22"
+                    alt="" srcset="">
+                <br>
+                <a href="BookEvent.html">
+
+                    <button>
+                        Book Event
+                    </button>
+                </a>
+            </div>
+        </center>
+    </div>
+
+</body>
+
+</html>
