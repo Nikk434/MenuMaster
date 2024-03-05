@@ -41,4 +41,15 @@ if (mysqli_query($conn, $sql) === TRUE) {
 } else {
     echo "Error creating table EventBookings";
 }
+$sql = "CREATE TABLE Menu (
+    DishID INT PRIMARY KEY AUTO_INCREMENT,
+    DishCategory VARCHAR(100),
+    DishName VARCHAR(255),
+    DishPrice DECIMAL(10, 2)
+)";
+if (mysqli_query($conn, $sql) === TRUE) {
+    echo "table menu Created Sucessfully ";
+} else {
+    echo "Error creating table menu";
+}
 ?>
