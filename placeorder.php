@@ -135,7 +135,9 @@
             ?>
 
             <textarea placeholder="Delivery Address" name="delivery_address" required></textarea>
-            <input type="text" placeholder="Preferred Delivery Time" name="preferred_delivery_time">
+            Preferred Delivery Time
+            <input type="datetime-local" placeholder="Preferred Delivery Time" name="preferred_delivery_time">
+            <br>
             Payment <br>
             <center>
             <img src="UPI.jpeg" >
